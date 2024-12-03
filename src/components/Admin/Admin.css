@@ -1,0 +1,117 @@
+.center-wrapper {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.admin-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.adminName,
+.adminMobilenumber,
+.adminPassword {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.adminName:focus,
+.adminMobilenumber:focus,
+.adminPassword:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.adminBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adminBtn:hover {
+    background-color: #0056b3;
+}
+
+.admin-msg {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #d9534f; /* Change color for error messages */
+}
+
+.admin-P {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.admin-P span {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.admin-P span:hover {
+    color: #0056b3;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Aligns the items vertically in the center */
+    gap: 10px; /* Adds space between the welcome message and the button */
+}
+
+.logout-button {
+    padding: 8px 12px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ec4d4d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #d43c3c;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
